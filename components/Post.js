@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Layout from "../../components/Layout";
-import Date from "../../components/Date";
-import utilStyles from "../../styles/utils.module.css";
+import Layout from "./Layout";
+import Date from "./Date";
+import utilStyles from "../styles/utils.module.css";
 
-export default function FirstPost({ postData = { title: '', date: ''} }) {
+export default function Post({ postData = { title: '', date: ''} }) {
     return <Layout>
         <Head>
             <title>{ postData.title }</title>

@@ -1,9 +1,9 @@
 import Layout from '../../components/layout';
 import {getAllPostIds, getPostData} from "../../lib/posts";
-import FirstPost from "./first-post";
+import PostComponent from "../../components/Post";
 
 export default function Post({ postData }) {
-  return <FirstPost postData={postData} />;
+  return <PostComponent postData={postData} />;
 }
 
 export async function getStaticPaths() {
