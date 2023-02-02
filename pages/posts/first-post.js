@@ -8,5 +8,6 @@ export default function FirstPost({ postData = { title: '', date: ''} }) {
         </Head>
         <h1>{ postData.title }</h1>
         <p>{ postData.date }</p>
+        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     </Layout>;
 }
