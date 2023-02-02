@@ -1,11 +1,12 @@
 import Head from "next/head";
 import Layout from "../../components/Layout";
 
-export default function FirstPost() {
+export default function FirstPost({ postData = { title: '', date: ''} }) {
     return <Layout>
         <Head>
-            <title>My First Post</title>
+            <title>{ postData.title }</title>
         </Head>
-        <h1>First Postre</h1>
+        <h1>{ postData.title }</h1>
+        <p>{ postData.date }</p>
     </Layout>;
 }
